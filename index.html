@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="css/index.css">
+   <script defer src="js/index.js"></script>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+
+   <!-- navegeacion -->
+   <div class="pt-10 px-4 md:px-12">
+      <nav class="flex justify-between items-center relative">
+         <img src="images/logo.svg" alt="Logo" class="object-contain">
+         <div class="hidden px-4 py-8 rounded-lg md:p-0 md:flex md:justify-between md:w-full" data-open="false">
+            <ul class="flex flex-col md:border-none md:flex-row">
+               <li><a href="#" class="text-center px-5 py-2 btn-gray">Features</a></li>
+               <li><a href="#" class="text-center px-5 py-2 btn-gray">Pricing</a></li>
+               <li><a href="#" class="text-center px-5 py-2 btn-gray">Resources</a></li>
+            </ul>
+            <hr class="md:hidden my-4">
+            <ul class="flex flex-col md:flex-row">
+               <li><a href="#" class="text-center px-5 py-2 btn-gray">Login</a></li>
+               <li><a href="#" class="text-center px-5 py-2 rounded-full btn-cyan">Sign Up</a></li>
+            </ul>
+         </div>
+         <div class="text-[1.5em] cursor-pointer nav-menu" data-menu="true">
+            <i class="fa-solid fa-bars md:hidden"></i>
+         </div>
+      </nav>
+   </div>
+
+   <!-- header -->
+   <div class="px-4 md:px-12">
+      <header class="flex gap-20 flex-col-reverse items-center md:flex-row md:gap-0">
+         <div>
+            <h1 class="title-h1 text-center md:text-left text-[2.5em] md:text-[4.8em] font-semibold">More than just shorter links</h1>
+            <p class="text-center md:text-left text-[1.1em] btn-gray">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+            <div class="text-center md:text-left md:mt-8">
+               <button class="px-8 py-2 rounded-full btn-cyan">Get Started</button>
+            </div>
+         </div>
+         <img src="images/illustration-working.svg" alt="" class="w-[625px] object-contain">
+      </header>
+   </div>
+
+   <!-- main -->
+   <div class="px-4 md:px-12 bg-gray-100">
+      <div class="md:inline bg-no-repeat gap-4 justify-center rounded-lg bg-right-top flex flex-col main">
+         <input class="px-6 py-[0.65rem] rounded-lg" placeholder="Shorten a link here...">
+         <button class="w-full md:w-auto px-6 py-[0.65rem] rounded-lg btn-cyan">Shorten It!</button>
+      </div>
+      <div>
+         <h2 class="text-center text-2xl md:text-3xl font-semibold title-h2">Advanced Statistics</h2>
+         <p class="text-center btn-gray">Track how your links are performing across the web with our advanced statistics dashboard</p>
+      </div>
+      <div class="md:grid grid-cols-3 flex flex-col gap-4">
+         <div class="flex items-center flex-col text-center md:block md:text-left bg-white px-4 py-8 rounded-lg">
+            <div class="img-violet translate-y-[-100%] md:translate-y-[-4rem] flex items-center justify-center size-16 rounded-full">
+               <img src="images/icon-brand-recognition.svg" width="30" height="30" alt="">
+            </div>
+            <span class="font-semibold title-span">Brand Recognition</span>
+            <p class="text-left btn-gray">Boost your brand recognition with each click Generic links don't mean a thing Branded links help instil confidence in your content</p>
+         </div>
+         <div class="flex items-center flex-col text-center md:block md:text-left bg-white px-4 py-8 rounded-lg">
+            <div class="img-violet translate-y-[-4rem] flex items-center justify-center size-16 rounded-full">
+               <img src="images/icon-detailed-records.svg" width="30" height="30" alt="">
+            </div>
+            <span class="font-semibold title-span">Detailed Records</span>
+            <p class="btn-gray">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+         </div>
+         <div class="flex items-center flex-col text-center md:block md:text-left bg-white px-4 py-8 rounded-lg">
+            <div class="img-violet translate-y-[-4rem] flex items-center justify-center size-16 rounded-full">
+               <img src="images/icon-fully-customizable.svg" width="30" height="30" alt="">
+            </div>
+            <span class="font-semibold title-span">Fully Customizable</span>
+            <p class="btn-gray">Improve brand awareness and content discoverability through customizable links. supercharging audience engagement.</p>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="px-4 md:px-12 h-[300px] md:h-auto bg-no-repeat fondo-img">
+      <div class="w-full flex justify-center items-center flex-col h-full">
+         <h2 class="text-white text-[1.6em]">Boost your links today</h2>
+         <button class="py-2 px-4 rounded-full btn-cyan">Get Started</button>
+      </div>
+   </div>
+
+   <!-- footer -->
+   <div class="px-4 md:px-12 footer">
+      <div class="flex flex-col items-center md:grid py-16" data-footer="footer">
+         <img src="images/logo.svg" width="121" height="33" alt="" class="invert">
+         <div class="text-center">
+            <span class="text-white">Features</span>
+            <a href="#" class="text-sm btn-gray">Link Shortening</a>
+            <a href="#" class="text-sm btn-gray">Branded Links</a>
+            <a href="#" class="text-sm btn-gray">Analytics</a>
+         </div>
+         <div class="text-center">
+            <span class="text-white">Resources</span>
+            <a href="#" class="text-sm btn-gray">Blog</a>
+            <a href="#" class="text-sm btn-gray">Developers</a>
+            <a href="#" class="text-sm btn-gray">Support</a>
+         </div>
+         <div class="text-center">
+            <span class="text-white">Company</span>
+            <a href="#" class="text-sm btn-gray">About</a>
+            <a href="#" class="text-sm btn-gray">Our Team</a>
+            <a href="#" class="text-sm btn-gray">Careers</a>
+            <a href="#" class="text-sm btn-gray">Contact</a>
+         </div>
+         <div class="flex flex-row">
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-twitter.svg" alt="">
+            <img src="images/icon-pinterest.svg" alt="">
+            <img src="images/icon-instagram.svg" alt="">
+         </div>
+      </div>
+   </div>
+
+
+</body>
+</html>
